@@ -1,0 +1,2 @@
+class ProductOperationError(Exception):
+    pass
