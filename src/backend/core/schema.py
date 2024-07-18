@@ -1,6 +1,7 @@
 from graphene import ObjectType, Schema
 
-from inventory.graphql import Query as InventoryQuery, Mutation as InventoryMutation
+from inventory.graphql.queries import Query as InventoryQuery
+from inventory.graphql.mutations import Mutation as InventoryMutation
 
 
 class Query(InventoryQuery, ObjectType):
