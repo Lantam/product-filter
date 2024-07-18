@@ -62,10 +62,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://192.168.178.51:3000",
-]
+CORS_ALLOWED_ORIGINS = getenv('DJANGO_ALLOWED_ORIGINS', default='').split()
 
 ROOT_URLCONF = 'config.urls'
 
