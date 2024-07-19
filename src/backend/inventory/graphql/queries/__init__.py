@@ -1,4 +1,4 @@
-from queries.product_queries import Query as ProductQuery
+from inventory.graphql.queries.product import Query as ProductQuery
 
 
 class Query(ProductQuery):
