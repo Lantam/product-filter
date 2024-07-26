@@ -1,11 +1,11 @@
-from django.db import models
+from django.db.models import CharField, EmailField, Model, TextField
 
 
-class Supplier(models.Model):
-    name = models.CharField(max_length=255)
-    contact_email = models.EmailField()
-    phone_number = models.CharField(max_length=20)
-    address = models.TextField()
+class Supplier(Model):
+    name = CharField(max_length=255)
+    contact_email = EmailField()
+    phone_number = CharField(max_length=20)
+    address = TextField()
 
     def __str__(self):
         return self.name
