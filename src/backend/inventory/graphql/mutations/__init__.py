@@ -1,4 +1,4 @@
-from mutations.product_mutations import Mutation as ProductMutation
+from inventory.graphql.mutations.product import Mutation as ProductMutation
 
 
 class Mutation(ProductMutation):
